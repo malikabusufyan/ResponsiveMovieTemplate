@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card{
+    width: 60%;
+    display: flex;
+    border: 2px solid grey;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px 6px white;
+    background-image: linear-gradient(-60deg, darkgrey,rgb(51, 46, 46));
+}
+
+.image{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 90%;
+    height: 80%;
+    border-radius: 10%;
+}
+
+.details{
+    color: whitesmoke;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 2px;
+}
+.name{
+        margin-top: 20px;
+            font-size: x-large;
+            font-family: emoji;
+}
+.stars{
+        font-size: unset;
+            font-family: ui-monospace;
+            color: lavenderblush;
+}
+
+.direction{
+        font-size: larger;
+        display: flex;
+        justify-content: space-between;
+}
+
+.description{
+    font-family: system-ui;
+        color: antiquewhite;
+        justify-content: center;
+        display: flex;
+}
+
+.booking{
+        
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            margin-top: 10px;
+            height: 30px;
+            align-items: center;
+            border-radius:10px;
+}
+.booking a{
+    text-decoration: none;
+    color: rgb(128, 10, 10);  
+}
+
+.booking a:hover{
+    background-color: cadetblue;
+}
+
+@media only screen and (max-width: 768px){
+    .details{
+        color: whitesmoke;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-left: 2px;
+        align-items: center;
+    }
+    .card{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid grey;
+        align-items: center;
+        height: 500px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 3px 6px white;
+        background-image: linear-gradient(-60deg, darkgrey, rgb(51, 46, 46));
+    }
+    .direction{
+        margin-left: 10px;
+    }
+    .description{
+        margin-left: 10px;
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    .details {
+        color: whitesmoke;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-left: 2px;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid grey;
+        align-items: center;
+        height: 500px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 3px 6px white;
+        background-image: linear-gradient(-60deg, darkgrey, rgb(51, 46, 46));
+    }
+    .stars{
+        margin-left: 10px;
+    }
+
+}
